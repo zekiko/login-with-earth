@@ -5,14 +5,14 @@ import "./top.css";
 const TopSectionContainer = styled.div`
   position: absolute;
   width: 100%;
-  height: 87%;
+  height: 100%;
   top: 0;
   left: 0;
   //background-color: #1756dd32;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 13%;
+  //padding-top: 13%;
   z-index: 99;
 `;
 
@@ -70,9 +70,24 @@ const MadeBy = styled.h3`
   transform: translateX(-50%);
 `;
 
-export function TopSection() {
+export function Login() {
   return (
-    <TopSectionContainer className="topComp">
+    <>
+      <TopSectionContainer className="topComp">
+        <div className="login" style={{
+          border: '0px solid white', width: '400px', height: '700px',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          //paddingTop: '13%',
+          zIndex: 99,
+          position: 'absolute',
+          top: 'calc(50% - 350px)',
+          left: 'calc(50% - 200px)',
+        }}>
+        </div>
+      </TopSectionContainer>
+      {/* <TopSectionContainer className="topComp">
       <Logo>Cagri Zeki</Logo>
       <Slogan>Cagri Zeki</Slogan>
       <Paragraph>
@@ -84,10 +99,8 @@ export function TopSection() {
       Cagri Zeki Cagri Zeki Cagri Zeki Cagri Zeki Cagri Zeki 
       Cagri Zeki Cagri Zeki Cagri Zeki Cagri Zeki Cagri Zeki 
       </Paragraph>
-      {/* <DonateButton>Donate</DonateButton> */}
-      {/* <MadeBy>
-        <u>Made By:</u> Islem Maboud
-      </MadeBy> */}
-    </TopSectionContainer>
+    </TopSectionContainer> */}
+    </>
+
   );
 }

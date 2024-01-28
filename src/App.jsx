@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Canvas } from "@react-three/fiber";
 import { Suspense } from "react";
 import { Earth } from "./components/earth";
-import { TopSection } from "./components/topSection";
+import { Login } from "./components/login";
 
 const CanvasContainer = styled.div`
   width: 100%;
@@ -57,7 +57,7 @@ function RimLight({ brightness, color }) {
 function App() {
   return (
     <CanvasContainer>
-       <TopSection />
+      <Login />
       <Canvas legacy={true} >
         <ambientLight intensity={0.1} />
         <Suspense fallback={null}>
